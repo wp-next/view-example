@@ -1,0 +1,27 @@
+{
+  "name": "wp-next-view-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wp-next/view-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wp-next/view-example/issues"
+  },
+  "homepage": "https://github.com/wp-next/view-example#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.11",
+    "postcss": "^8.1.14",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

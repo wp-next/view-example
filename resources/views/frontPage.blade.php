@@ -21,6 +21,8 @@
         type="warning"
         message="Warning test"
     />
-    
-    asd
+
+    <test-component></test-component>
+
+    <slider-provider></slider-provider>
 </x-layouts::app>
