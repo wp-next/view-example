@@ -1,0 +1,23 @@
+{
+    "name": "wp-next/view-test",
+    "description": "view-package-test",
+    "require": {
+        "wp-next/view": "^8.0",
+        "filp/whoops": "^2.9",
+        "illuminate/config": "^8.26",
+        "illuminate/container": "^8.26",
+        "illuminate/events": "^8.26",
+        "illuminate/filesystem": "^8.26"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.2"
+    },
+    "autoload": {
+        "files": [
+            "app/helpers.php"
+        ],
+        "psr-4": {
+          "App\\": "app/"
+        }
+    }
+}

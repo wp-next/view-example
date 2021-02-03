@@ -1,0 +1,3 @@
+<footer>
+    Min sidfot
+</footer>
