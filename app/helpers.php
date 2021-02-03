@@ -21,3 +21,22 @@ function view($view = null, $data = [], $mergeData = [])
 
     echo $factory->make($view, $data, $mergeData);
 }
+
+function getSvg(string $name, $class = '')
+{
+    $svg = file_get_contents(app()->resourcePath('assets/images/'.$name.'.svg'));
+
+    if (empty($class)) {
+        return $svg;
+    }
+
+    $doc = new \DOMDocument;
+    $doc->loadXML($svg);
+    $svgs = $doc->getElementsByTagName('svg');
+
+    foreach ($svgs as $svg) {
+        $svg->setAttribute('class', $class);
+    }
+
+    return $doc->saveHTML();
+}

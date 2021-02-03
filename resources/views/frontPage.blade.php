@@ -22,6 +22,8 @@
         message="Warning test"
     />
 
+    @svg('facebook', 'facebookIcon')
+
     <test-component></test-component>
 
     <slider-provider></slider-provider>

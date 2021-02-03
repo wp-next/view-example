@@ -19,6 +19,9 @@ class Application extends Container
         $this->bindPathsInContainer();
         $this->registerBaseBindings();
         $this->registerViewServiceProvider();
+
+        $serviceProvider = new ServiceProvider($this);
+        $serviceProvider->boot();
     }
 
     public function setBasePath($basePath)
@@ -48,9 +51,6 @@ class Application extends Container
 
             return $config;
         });
-
-        $serviceProvider = new ServiceProvider($this);
-        $serviceProvider->boot();
     }
 
     protected function registerViewServiceProvider()
