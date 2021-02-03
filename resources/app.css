@@ -3,6 +3,7 @@
 body {
     color: var(--primaryColor);
     padding: calc(1rem + 2rem);
+    font-size: 30px;
 
     @media (--smallDesktop) {
         color: pink;
