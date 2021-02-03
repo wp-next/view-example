@@ -13,10 +13,10 @@ class WpNextMix {
         ];
     }
 
-    register({ publicPath, assetsFolder, resourcesFolder, cssEntry, jsEntry }) {
+    register({ publicPath, distFolder, assetsFolder, resourcesFolder, cssEntry, jsEntry }) {
         mix.setPublicPath(publicPath);
 
-        mix.js(jsEntry, assetsFolder).vue({ version: 2 });
+        mix.js(jsEntry, distFolder).vue({ version: 2 });
 
         const postCssPlugins = [
             require('postcss-preset-env')({
@@ -30,11 +30,13 @@ class WpNextMix {
             require('postcss-calc')(),
         ];
 
-        mix.postCss(cssEntry, assetsFolder, postCssPlugins);
+        mix.postCss(cssEntry, distFolder, postCssPlugins);
 
         if (mix.inProduction()) {
             mix.version();
         }
+
+        mix.copyDirectory(assetsFolder, path.resolve(publicPath));
 
         mix.webpackConfig({
             resolve: {

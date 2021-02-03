@@ -10,6 +10,11 @@
         alt="random"
     />
 
+    <x-image 
+        src="/images/facebook.svg"
+        alt="facebook"
+    />
+
     <x-test />
 
     <x-alert 
