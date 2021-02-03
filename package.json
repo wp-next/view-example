@@ -18,8 +18,14 @@
   },
   "homepage": "https://github.com/wp-next/view-example#readme",
   "devDependencies": {
+    "css-loader": "^5.0.1",
     "laravel-mix": "^6.0.11",
     "postcss": "^8.1.14",
+    "postcss-calc": "^8.0.0",
+    "postcss-loader": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-resources-loader": "^2.1.1",
+    "style-loader": "^2.0.0",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.5",
     "vue-template-compiler": "^2.6.12"

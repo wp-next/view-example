@@ -1,0 +1,45 @@
+:root {
+    /*
+    // Colors
+    */
+    --primaryTextColor: #4a4a4a;
+    --primaryColor: #90cdf4;
+    --secondaryColor: #e6003c;
+
+    /*
+    // Fonts
+    */
+    --primaryFont: "Roboto" sans-serif;
+    --secondaryFont: var(--primaryFont);
+
+    /*
+    // Transitions
+    */
+    --cubicBezier: cubic-bezier(0.4, 0, 0.2, 1);
+    --fastTrans: 0.15s var(--cubicBezier);
+    --normalTrans: 0.25s var(--cubicBezier);
+    --slowTrans: 0.35s var(--cubicBezier);
+    --slowerTrans: 0.45s var(--cubicBezier);
+}
+
+/*
+// Media queries
+*/
+
+@custom-media --smallDesktop (max-width: 1700px);
+@custom-media --laptop (max-width: 1450px);
+@custom-media --largeTablet (max-width: 1240px);
+@custom-media --tablet (max-width: 1030px);
+@custom-media --mediumTablet (max-width: 880px);
+@custom-media --smallTablet (max-width: 760px);
+@custom-media --mobile (max-width: 600px);
+@custom-media --smallMobile (max-width: 359px);
+
+@custom-media --aboveSmallDesktop (min-width: 1701px);
+@custom-media --aboveLaptop (min-width: 1451px);
+@custom-media --aboveLargeTablet (min-width: 1241px);
+@custom-media --aboveTablet (min-width: 1031px);
+@custom-media --aboveMediumTablet (min-width: 881px);
+@custom-media --aboveSmallTablet (min-width: 761px);
+@custom-media --aboveMobile (min-width: 601px);
+@custom-media --aboveSmallMobile (min-width: 360px);

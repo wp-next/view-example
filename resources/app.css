@@ -1,3 +1,10 @@
+@import "./css/variables";
+
 body {
-    color: blue;
+    color: var(--primaryColor);
+    padding: calc(1rem + 2rem);
+
+    @media (--smallDesktop) {
+        color: pink;
+    }
 }

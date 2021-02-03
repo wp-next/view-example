@@ -14,8 +14,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 button {
     color: green;
+    padding: calc(1px + 2px);
 }
 </style>
