@@ -40,3 +40,8 @@ function getSvg(string $name, $class = '')
 
     return $doc->saveHTML();
 }
+
+function mix($path, $manifestDirectory = '')
+{
+    return app(App\Mix::class)(...func_get_args());
+}

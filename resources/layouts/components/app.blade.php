@@ -9,8 +9,8 @@
     <meta property="og:description" content="{{ $meta->description ?? null }}" />
     <meta property="og:image" content="{{ $meta->image ?? null }}">
     <meta name="twitter:card" content="summary" />
-    <link rel="stylesheet" href="/dist/app.css">
-    <script src="/dist/app.js" defer></script>
+    <link rel="stylesheet" href="{{ mix('/dist/app.css') }}">
+    <script src="{{ mix('/dist/app.js') }}" defer></script>
     <link rel="shortcut icon" type="image/png" href="{{ $favicon ?? null }}">
 </head>
 <body>

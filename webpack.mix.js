@@ -3,9 +3,15 @@ let mix = require('laravel-mix');
 
 require('./wp-next-postcss.js');
 
-mix.wpNextPostCSS('resources/app.css', 'public_html/dist');
+mix.setPublicPath('public_html');
 
-mix.js('resources/app.js', 'public_html/dist').vue({ version: 2 });
+mix.wpNextPostCSS('resources/app.css', 'dist');
+
+mix.js('resources/app.js', 'dist').vue({ version: 2 });
+
+if (mix.inProduction()) {
+    mix.version();
+} 
 
 mix.webpackConfig({
     resolve: {
